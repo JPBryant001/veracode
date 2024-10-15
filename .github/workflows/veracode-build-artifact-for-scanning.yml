@@ -70,10 +70,10 @@ jobs:
       ref: ${{ inputs.ref }}
       token: ${{ inputs.token }}
 
-  build-dart-package:
-    if: ${{ inputs.event_name == 'dart-pipeline-scan' || inputs.event_name == 'dart-policy-scan'  || inputs.event_name == 'dart-sandbox-scan'}}
-    uses: ./.github/workflows/veracode-build-dart.yml
-    with:
-      repository: ${{ inputs.repository }}
-      ref: ${{ inputs.ref }}
-      token: ${{ inputs.token }}
+#  build-dart-package:
+#    if: ${{ inputs.event_name == 'dart-pipeline-scan' || inputs.event_name == 'dart-policy-scan'  || inputs.event_name == 'dart-sandbox-scan'}}
+#    uses: ./.github/workflows/veracode-build-dart.yml
+#    with:
+#      repository: ${{ inputs.repository }}
+#      ref: ${{ inputs.ref }}
+#      token: ${{ inputs.token }}
