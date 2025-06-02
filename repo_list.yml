@@ -16,4 +16,4 @@ include_repos:
 exclude_repos:
   - 'veracode'
 
-  - 'GitHubApp-no-config'
+  - 'JPBryant001/GitHubApp-no-config'
