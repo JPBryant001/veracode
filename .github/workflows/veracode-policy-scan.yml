@@ -74,7 +74,7 @@ jobs:
 
       # run the policy scan action
       - name: Veracode Upload and Scan Action Step
-        uses: veracode/uploadandscan-action@v0.1.5
+        uses: veracode/uploadandscan-action@v0.2.11
         id: upload_and_scan
         with:
           appname: ${{ inputs.profile_name }}
@@ -173,7 +173,7 @@ jobs:
 
       - name: Create flaws as issues for java language
         if: ${{ inputs.language == 'Java' }}
-        uses: veracode/veracode-flaws-to-issues@v2.2.24
+        uses: veracode/veracode-flaws-to-issues@v2.2.25
         with:
           scan-results-json: '/tmp/policy_flaws.json'
           repo_owner: ${{ inputs.owner }}
